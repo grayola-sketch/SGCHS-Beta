@@ -1,0 +1,223 @@
+body {
+  margin: 0;
+  font-family: Garamond, "Times New Roman", serif;
+  background-color: #FFD199;
+  background-image: url('/images/background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90px;
+  background: #f47f20;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  box-sizing: border-box;
+  z-index: 1000;
+}
+
+.navbar img { max-height: 85%; }
+
+.hamburger {
+  display: none;
+}
+
+.hamburger div {
+  height: 3px;
+  background-color: white;
+  border-radius: 2px;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 90px;
+  left: 0;
+  width: 220px;
+  height: calc(100% - 90px);
+  background: #f47f20;
+  display: flex;
+  flex-direction: column;
+  border-top: 2px solid white;
+  transition: transform 0.3s ease;
+  z-index: 1001;
+}
+
+.sidebar a {
+  padding: 20px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  border-bottom: 2px solid white;
+  transition: transform 0.15s ease, background 0.2s ease;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.sidebar a:hover {
+  background-color: #d96d18;
+  transform: scaleY(1.12);
+  z-index: 1;
+}
+
+/* Center Logo */
+.center-logo {
+  position: fixed;
+  top: 110px;
+  left: calc(220px + (100% - 220px) / 2);
+  transform: translateX(-50%);
+  z-index: 500;
+}
+
+.center-logo img { width: 340px; }
+
+/* Content */
+.content {
+  margin-top: 90px;
+  margin-left: 220px;
+  padding: 30px;
+  padding-top: 300px;
+}
+
+/* Calendar */
+#calendar-page {
+  display: none;
+  margin-top: 90px;
+  margin-left: 220px;
+  padding: 30px;
+}
+
+.calendar-container {
+  max-width: 650px;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.95);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+#calendar {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#calendar th, #calendar td {
+  border: 1px solid #ccc;
+  width: 14.28%;
+  height: 90px;
+  vertical-align: top;
+  padding: 4px;
+  position: relative;
+}
+
+.date-number {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.task-box {
+  background: #ffb347;
+  padding: 2px 4px;
+  margin-top: 2px;
+  font-size: 11px;
+  border-radius: 4px;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 400px;
+  position: relative;
+}
+
+.modal .close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+/* ===== BETA POINTS DASHBOARD ===== */
+
+#points-page {
+  display: none;
+  margin-top: 90px;        /* below navbar */
+  margin-left: 220px;      /* to the right of sidebar */
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.beta-card{
+  background:white;
+  max-width:550px;
+  margin:auto;
+  padding:30px;
+  border-radius:12px;
+  box-shadow:0 6px 12px rgba(0,0,0,0.15);
+}
+
+.beta-card h2{
+  text-align:center;
+  margin-bottom:20px;
+}
+
+.points-total{
+  font-size:42px;
+  font-weight:bold;
+  text-align:center;
+  color:#f47f20;
+}
+
+.points-remaining{
+  text-align:center;
+  margin-bottom:20px;
+  font-weight:bold;
+}
+
+.points-breakdown{
+  margin-top:15px;
+}
+
+.points-row{
+  display:flex;
+  justify-content:space-between;
+  border-bottom:1px solid #eee;
+  padding:6px 0;
+}
+
+/*===Service Projects====*/
