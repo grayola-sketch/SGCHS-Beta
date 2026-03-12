@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SGCHS Beta</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="mobile.css">
+</head>
+
+<body>
+
+<div class="navbar">
+<img src="/images/SGCHS.png" onclick="goHome()" style="cursor:pointer;">
+<div class="hamburger" onclick="toggleSidebar()">
+<div></div><div></div><div></div>
+</div>
+</div>
+
+<div class="sidebar" id="sidebar">
+<a onclick="showContent('home')">Beta Sponsors / Officers</a>
+<a onclick="showContent('contact')">Contact</a>
+<a onclick="showContent('calendar')">Calendar</a>
+<a onclick="showContent('service')">Service Projects</a>
+<a onclick="showContent('betaPoints')">Beta Points</a>
+<a onclick="showContent('convention')">Convention</a>
+</div>
+
+<div class="center-logo" id="home">
+<img src="/images/SGCHS-transparent.png">
+</div>
+
+<div class="content" id="homeContent">
+<h1>Welcome to SGCHS Beta</h1>
+<a href="https://jacksong2008.codehs.me/beta/vision.html">Vision Statement</a>
+<p>This text will stay under the image and over the background.<br>This text will stay under the image and over the background.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu est sed turpis venenatis laoreet. In maximus vel massa non placerat. Fusce vel elementum risus, at mattis turpis. Aliquam vitae consectetur augue. Sed facilisis lobortis turpis. Fusce at magna sem. Nam tempus feugiat ullamcorper. Curabitur augue quam, venenatis vel mollis egestas, mollis nec arcu. Morbi rhoncus, felis et vulputate interdum, leo sem tincidunt lectus, ut consequat mi nisi id urna. Phasellus porttitor dignissim arcu, vitae dapibus augue cursus eu. Phasellus lectus urna, sollicitudin at facilisis non, rhoncus vel est. Aenean non ligula porttitor, fermentum mauris at, sodales libero. Duis nec erat mauris. Cras pretium finibus turpis, in ornare eros imperdiet eget. Nulla tincidunt nulla vel erat vulputate rhoncus. Duis rhoncus tortor diam, at rutrum velit vulputate vitae. Cras sed velit quis nunc tincidunt eleifend et sit amet quam. Maecenas lacus augue, condimentum molestie venenatis sed, lobortis iaculis enim. Quisque nunc felis, suscipit ut mi nec, tempus cursus risus. Integer faucibus lacus quis sem blandit, at sodales metus eleifend. Donec sit amet pellentesque nisi, id aliquet dui. Ut consequat arcu at varius dapibus. Quisque id dolor sit amet eros pretium egestas. Curabitur sed dolor in elit fermentum tempor. In pretium, eros vel lobortis ultrices, ex ex dignissim odio, et scelerisque neque sem vel tellus. Fusce semper tincidunt turpis. Integer at accumsan magna, at aliquam nulla. Vestibulum mauris leo, dapibus et lorem a, varius fringilla leo. Morbi rutrum tortor facilisis massa porttitor fermentum. Ut ultricies est efficitur, vehicula est ut, tristique erat. Fusce quis rutrum justo, eu tristique purus. Nullam ut maximus leo, lacinia consequat enim. Vivamus congue tincidunt felis ut egestas. Cras ac massa id orci posuere tempor nec sed elit. Ut ac volutpat ipsum, id interdum tortor. Phasellus tincidunt et dolor in congue. Proin vestibulum, elit eu sodales aliquam, dolor mauris aliquet ipsum, a tempus mauris nunc ac nibh. Morbi vestibulum est ac mauris scelerisque, vulputate consectetur nisi mollis. Donec vel ligula in magna finibus blandit. Cras efficitur vulputate massa, ullamcorper molestie risus. Etiam tincidunt volutpat justo sed mattis. Fusce porttitor elementum nunc et lobortis. Morbi aliquet lacinia sem. Curabitur semper finibus nibh vel viverra. Mauris lobortis, justo a accumsan euismod, elit ante blandit ligula, eget gravida velit ipsum at leo. Sed faucibus eget mauris pretium maximus.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu est sed turpis venenatis laoreet. In maximus vel massa non placerat. Fusce vel elementum risus, at mattis turpis. Aliquam vitae consectetur augue. Sed facilisis lobortis turpis. Fusce at magna sem. Nam tempus feugiat ullamcorper. Curabitur augue quam, venenatis vel mollis egestas, mollis nec arcu. Morbi rhoncus, felis et vulputate interdum, leo sem tincidunt lectus, ut consequat mi nisi id urna. Phasellus porttitor dignissim arcu, vitae dapibus augue cursus eu. Phasellus lectus urna, sollicitudin at facilisis non, rhoncus vel est. Aenean non ligula porttitor, fermentum mauris at, sodales libero. Duis nec erat mauris. Cras pretium finibus turpis, in ornare eros imperdiet eget.
+
+Nulla tincidunt nulla vel erat vulputate rhoncus. Duis rhoncus tortor diam, at rutrum velit vulputate vitae. Cras sed velit quis nunc tincidunt eleifend et sit amet quam. Maecenas lacus augue, condimentum molestie venenatis sed, lobortis iaculis enim. Quisque nunc felis, suscipit ut mi nec, tempus cursus risus. Integer faucibus lacus quis sem blandit, at sodales metus eleifend. Donec sit amet pellentesque nisi, id aliquet dui. Ut consequat arcu at varius dapibus. Quisque id dolor sit amet eros pretium egestas. Curabitur sed dolor in elit fermentum tempor. In pretium, eros vel lobortis ultrices, ex ex dignissim odio, et scelerisque neque sem vel tellus. Fusce semper tincidunt turpis. Integer at accumsan magna, at aliquam nulla. Vestibulum mauris leo, dapibus et lorem a, varius fringilla leo. Morbi rutrum tortor facilisis massa porttitor fermentum. Ut ultricies est efficitur, vehicula est ut, tristique erat.
+
+Fusce quis rutrum justo, eu tristique purus. Nullam ut maximus leo, lacinia consequat enim. Vivamus congue tincidunt felis ut egestas. Cras ac massa id orci posuere tempor nec sed elit. Ut ac volutpat ipsum, id interdum tortor. Phasellus tincidunt et dolor in congue. Proin vestibulum, elit eu sodales aliquam, dolor mauris aliquet ipsum, a tempus mauris nunc ac nibh. Morbi vestibulum est ac mauris scelerisque, vulputate consectetur nisi mollis. Donec vel ligula in magna finibus blandit. Cras efficitur vulputate massa, ullamcorper molestie risus. Etiam tincidunt volutpat justo sed mattis. Fusce porttitor elementum nunc et lobortis. Morbi aliquet lacinia sem. Curabitur semper finibus nibh vel viverra. Mauris lobortis, justo a accumsan euismod, elit ante blandit ligula, eget gravida velit ipsum at leo. Sed faucibus eget mauris pretium maximus.
+
+</p>
+</div>
+
+<!-- CALENDAR PAGE -->
+<div id="calendar-page" style="display:none;padding:30px;margin-top:100px;">
+<div class="calendar-container">
+<div class="calendar-header">
+<button onclick="changeMonth(-1)">&lt;</button>
+<span id="monthYear"></span>
+<button onclick="changeMonth(1)">&gt;</button>
+</div>
+<table id="calendar">
+<thead>
+<tr>
+<th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th>
+<th>Thu</th><th>Fri</th><th>Sat</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</div>
+</div>
+
+<!--Service project page-->
+
+<div id="service-page" style="display:none;padding:30px;margin-top:100px;">
+
+<h2>Service Projects</h2>
+
+<p>Check below for the latest Beta service announcements.</p>
+
+
+</div>
+
+</div>
+
+<!-- BETA POINTS PAGE -->
+<div id="points-page" style="display:none;padding:30px;margin-top:100px;max-width:700px;">
+<h2>Your Beta Points</h2>
+
+<input type="text" id="firstName" placeholder="First Name">
+<input type="text" id="lastName" placeholder="Last Name">
+<input type="text" id="gradeLevel" placeholder="Grade Level">
+
+<button onclick="lookupPoints()">View My Points</button>
+
+<div id="pointsResult" style="margin-top:25px;"></div>
+</div>
+
+<!-- MODAL -->
+<div id="eventModal" class="modal">
+<div class="modal-content">
+<span class="close" onclick="closeModal()">&times;</span>
+<h3 id="modalTitle"></h3>
+</div>
+</div>
+
+<script>
+/* NAVIGATION */
+function toggleSidebar(){
+document.getElementById('sidebar').classList.toggle('open');
+}
+function showContent(tab) {
+
+  const homeLogo = document.getElementById('home');
+const homeText = document.getElementById('homeContent');
+const calendar = document.getElementById('calendar-page');
+const service = document.getElementById('service-page');
+const points = document.getElementById('points-page');
+
+  /* hide everything first */
+  homeLogo.style.display = 'none';
+homeText.style.display = 'none';
+calendar.style.display = 'none';
+service.style.display = 'none';
+points.style.display = 'none';
+
+  if(tab === 'home'){
+    homeLogo.style.display = 'flex';   // keeps logo perfectly centered
+    homeText.style.display = 'block';
+  }
+
+  if(tab === 'calendar'){
+  calendar.style.display = 'block';
+}
+
+if(tab === 'service'){
+  service.style.display = 'block';
+}
+
+if(tab === 'betaPoints'){
+  points.style.display = 'block';
+}
+
+  /* close sidebar on mobile */
+  document.getElementById('sidebar').classList.remove('open');
+}
+function goHome(){
+showContent('home');
+}
+
+/* CALENDAR */
+const events = {
+"2025-08-18":["Beta Officer Applications Open"],
+"2025-08-26":["All Beta Contracts and Fees Due","Beta Officer Applications Due"],
+"2025-09-04":["First Beta Meeting"],
+"2025-09-19":["Art for Hearts Donations Due"],
+"2025-09-23":["Beta Induction Ceremony - 7PM"],
+"2025-09-26":["Beta Meeting","Candy Collection Begins"],
+"2025-09-29":["Krispy Kreme Donut Fundraiser Begins"],
+"2025-10-01":["Convention Forms and Deposits Due"],
+"2025-10-17":["Krispy Kreme Donut Fundraiser Ends","Mandatory Beta Convention Travel Meeting"],
+"2025-10-24":["Candy Collection Ends"],
+"2025-10-27":["Trunk or Treat"],
+"2025-11-06":["Blessings Bags Begin"],
+"2025-11-07":["Beta Club Meeting","Beta Convention Balances Due"],
+"2025-11-14":["Mandatory Beta Convention Travel Meeting"],
+"2025-11-17":["Blessings Bags End"],
+"2025-11-20":["TN State Beta Convention Begins"],
+"2025-11-22":["TN State Beta Convention Ends"],
+"2025-11-18":["Isaiah 117 House Project Begins"],
+"2025-12-04":["Isaiah 117 House Project Ends"],
+"2025-12-05":["Christmas Cards Begin"],
+"2025-12-06":["RIFA Serve Day"],
+"2025-12-12":["Christmas Cards End"],
+"2026-01-12":["Birthday Kits Begin"],
+"2026-02-11":["Birthday Kits End"],
+"2026-02-17":["Treats for Troops Begin"],
+"2026-02-27":["Treats for Troops End"],
+"2026-03-02":["Animal Shelter Items Begin"],
+"2026-03-13":["Animal Shelter Items End"],
+"2026-03-20":["Easter Bunny Breakfast Setup"],
+"2026-03-21":["Easter Bunny Breakfast"],
+"2026-04-24":["Senior Beta Member Points Due"],
+"2026-04-27":["Beta Buzz Awards"],
+"2026-05-07":["Sophomore and Junior Points Due"]
+};
+
+const calendarBody=document.querySelector('#calendar tbody');
+const monthYear=document.getElementById('monthYear');
+const today=new Date();
+let currentDate=new Date(today.getFullYear(),today.getMonth(),1);
+
+function renderCalendar(){
+calendarBody.innerHTML='';
+const year=currentDate.getFullYear();
+const month=currentDate.getMonth();
+const firstDay=new Date(year,month,1).getDay();
+const daysInMonth=new Date(year,month+1,0).getDate();
+monthYear.textContent=currentDate.toLocaleString('default',{month:'long'})+" "+year;
+let row=calendarBody.insertRow();
+let day=1;
+const todayStr=today.toISOString().split('T')[0];
+for(let i=0;i<firstDay;i++){row.insertCell();}
+for(let i=firstDay;day<=daysInMonth;i++){
+if(i%7===0&&i!==0){row=calendarBody.insertRow();}
+const cell=row.insertCell();
+const dateStr=`${year}-${String(month+1).padStart(2,'0')}-${String(day).padStart(2,'0')}`;
+const dateDiv=document.createElement('div');
+dateDiv.className="date-number";
+dateDiv.textContent=day;
+cell.appendChild(dateDiv);
+if(dateStr<todayStr){cell.style.background="#e6e6e6";}
+if(dateStr===todayStr){cell.style.background="#FFD700";}
+if(events[dateStr]){
+events[dateStr].forEach(task=>{
+const div=document.createElement('div');
+div.className="task-box";
+div.textContent=task.length>18?task.substring(0,18)+"...":task;
+div.onclick=()=>openModal(task);
+cell.appendChild(div);
+});
+}
+day++;
+}
+}
+
+function changeMonth(dir){
+currentDate.setMonth(currentDate.getMonth()+dir);
+renderCalendar();
+}
+
+renderCalendar();
+
+/* MODAL */
+const modal=document.getElementById('eventModal');
+const modalTitle=document.getElementById('modalTitle');
+function openModal(text){
+modal.style.display="flex";
+modalTitle.textContent=text;
+}
+function closeModal(){
+modal.style.display="none";
+}
+
+/* BETA POINTS */
+const pointsCSV="https://docs.google.com/spreadsheets/d/e/2PACX-1vRBD5JMM24sDdVQClYIkwLJT8Eh4n1SZKayhtQpcTaOyPC-7SU-QA8T94qfHG1WvBf7Cxm8ZHUvZbDk/pub?gid=977931161&single=true&output=csv";
+function parseCSV(csv){return csv.trim().split("\n").map(r=>r.split(","));}
+
+async function lookupPoints(){
+const first=document.getElementById("firstName").value.trim().toLowerCase();
+const last=document.getElementById("lastName").value.trim().toLowerCase();
+const grade=document.getElementById("gradeLevel").value.trim().toLowerCase();
+const resDiv=document.getElementById("pointsResult");
+if(!first||!last||!grade){resDiv.innerHTML="<p>Please fill out all fields.</p>";return;}
+try{
+const response=await fetch(pointsCSV);
+const text=await response.text();
+const data=parseCSV(text);
+const headers=data[0];
+let found=false;
+for(let i=1;i<data.length;i++){
+const row=data[i];
+if(row[1].toLowerCase()==first && row[0].toLowerCase()==last && row[2].toLowerCase()==grade){
+found=true;
+const total=parseInt(row[3]);
+const remaining=Math.max(16-total,0);
+let dueDate=(grade==="12")?"April 24":"May 7";
+let html=`<h3>Total Points: ${total}</h3>
+<h4>Points Remaining to reach 16: ${remaining}</h4>
+<h4>Points Due Date: ${dueDate}</h4>
+<div style="background:#ddd;height:20px;border-radius:10px;margin:10px 0;">
+<div style="width:${Math.min((total/16)*100,100)}%;background:#f47f20;height:100%;border-radius:10px;"></div>
+</div>
+<h4>Project Breakdown</h4><ul>`;
+for(let j=4;j<row.length;j++){
+const pts=parseInt(row[j]);
+if(pts>0){html+=`<li>${headers[j]} — ${pts} pts</li>`;}
+}
+html+="</ul>";
+resDiv.innerHTML=html;
+break;
+}
+}
+if(!found){resDiv.innerHTML="<p>No matching student found.</p>";}
+}catch(err){resDiv.innerHTML="<p>Error fetching points. Try again later.</p>";console.error(err);}
+}
+</script>
+
+</body>
+</html>
