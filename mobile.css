@@ -1,0 +1,104 @@
+@media (max-width: 700px) {
+  /* Sidebar stays collapsed by default */
+  .sidebar{
+  position:fixed;
+  width:200px;
+  left:-200px;
+  top:70px;            /* starts below navbar */
+  height:calc(100% - 70px);
+  z-index:4;
+}
+
+  .sidebar.open {
+    transform: translateX(200px); /* slides over content */
+  }
+
+  .content, #points-page {
+    margin-left: 0;
+    margin-top: 70px;  
+    padding-top:220px; /* below navbar */
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Center logo adjustments */
+ .center-logo{
+  position:fixed;
+  top:70px;
+  left:220px;              /* starts to the right of sidebar */
+  width:400px;
+  height:200px;            /* only tall enough for logo */
+  background:#FFD199;         /* same color as your background */
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  z-index:2;
+}
+
+  .center-logo img {
+    width: 260px;
+     position:relative;
+    z-index:3;
+}
+  }
+  
+    .hamburger{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    gap:5px;
+    cursor:pointer;
+    position:absolute;
+    right:20px;
+    top:18px;
+  }
+  .hamburger div{
+    width:28px;
+    height:3px;
+    background:white;
+  }
+
+
+  /* Calendar responsive for mobile */
+  #calendar {
+    width: 100%;
+    table-layout: fixed;
+  }
+
+  #calendar th,
+#calendar td{
+  padding:4px;
+  font-size:10px;
+  min-height:70px;
+  height:70px;
+  word-wrap:break-word;
+  vertical-align:top;
+}
+
+  .calendar-container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  #calendar-page {
+    margin-left: 0;
+    padding: 10px;
+  }
+}
+/* ===== MOBILE BETA PAGE ===== */
+
+@media (max-width:700px){
+
+#betaPoints-page{
+  margin-left:0;
+  margin-top:70px;
+  padding:15px;
+}
+
+.beta-card{
+  width:100%;
+}
+}
+/*==service projects ==*/
+
+}
